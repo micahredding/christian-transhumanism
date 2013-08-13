@@ -1,0 +1,244 @@
+/*
+ * This file should only comprise of @imports.
+ * Place all styles in appropriately named files.
+ * See the ToC in _application.scss
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* LIBRARY
+ * -----------------------------------------------------------------------------
+ * Styling for custom elements used throughout the site.
+ * -----------------------------------------------------------------------------*/
+/*
+ * TABLE OF CONTENTS
+ * ---------------------------------------------------------------------------
+ * 1. Utilities
+ * 2. Buttons
+ * 3. Forms
+ * 4. Lists
+ * 5. Navigation
+ * 6. Tables
+ * 7. Other/Misc
+ * ---------------------------------------------------------------------------
+ */
+/**** Utilities ****/
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix {
+  display: block; }
+
+.selfclear {
+  clear: both; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.valign-top {
+  vertical-align: top; }
+
+.valign-middle {
+  vertical-align: middle; }
+
+.valign-bottom {
+  vertical-align: bottom; }
+
+.relative {
+  position: relative; }
+
+.no-margin {
+  margin: 0; }
+
+.no-padding {
+  padding: 0; }
+
+/**** Buttons ****/
+/**** Forms ****/
+/**** Lists ****/
+.list-horizontal {
+  margin: 0; }
+  .list-horizontal > li {
+    display: inline-block; }
+
+.list-unstyled {
+  margin: 0;
+  padding: 0; }
+  .list-unstyled > li {
+    list-style: none; }
+
+/**** Navigation ****/
+/**** Tables ****/
+/**** Other/Misc ****/
+/*
+ * PLEASE, PLEASE, PLEASE...
+ * Organize your CSS. Do not simply throw your CSS at the end
+ * of this file. Read the table of contents and _use_ it.
+ */
+/*
+ * TABLE OF CONTENTS
+ * ---------------------------------------------------------------------------
+ * 1. Globals  - Default HTML element styling.
+ * 2. Template - Styling for the structure of the site.
+ * ---------------------------------------------------------------------------
+ */
+/* Things to place in separate files...
+ * ---------------------------------------------------------------------------
+ * _variables.scss - Sass variables.
+ * _mixins.scss    - Sass mixins.
+ * _library.scss   - Styling for custom classes used throughout the site.
+ * _page_name.scss - Styling for page/state specific elements. Name the
+ *                   file appropriately.
+ * ---------------------------------------------------------------------------
+ */
+/* GLOBALS
+ * -----------------------------------------------------------------------------
+ * Styling for default HTML elements.
+ * -----------------------------------------------------------------------------*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-attachment: fixed;
+  background-position: 50000;
+  background-size: cover; }
+  @media screen and (min-width: 700px) {
+    body {
+      font-size: 18px; } }
+
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  color: #333333; }
+  @media screen and (min-width: 850px) {
+    h1 {
+      font-size: 3.5em; } }
+
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+  color: #333333; }
+  @media screen and (min-width: 850px) {
+    h2 {
+      font-size: 3em; } }
+
+h1 + h2 {
+  font-size: 2em;
+  color: #999999; }
+  @media screen and (min-width: 850px) {
+    h1 + h2 {
+      font-size: 1.8em; } }
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333333; }
+
+h2 + h3 {
+  font-size: 1em;
+  font-weight: normal;
+  color: #333333; }
+  @media screen and (min-width: 850px) {
+    h2 + h3 {
+      font-size: 2em; } }
+
+dl {
+  margin-bottom: 1.5; }
+
+dt,
+dd {
+  line-height: 1.5; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 0.75; }
+
+.dl-horizontal dt {
+  clear: left;
+  float: left;
+  text-align: right;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+.dl-horizontal dd {
+  margin-left: 130px; }
+
+/* TEMPLATE
+ * -----------------------------------------------------------------------------
+ * Styling for the structure of the site.
+ * -----------------------------------------------------------------------------*/
+#content-primary {
+  *zoom: 1;
+  max-width: 43em;
+  margin-left: auto;
+  margin-right: auto; }
+  #content-primary:before, #content-primary:after {
+    content: " ";
+    display: table; }
+  #content-primary:after {
+    clear: both; }
+
+section {
+  padding: 3em 2em; }
+  @media screen and (min-width: 850px) {
+    section {
+      padding: 3em 0; } }
+  section a, section a:visited {
+    background: #61b8db;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none; }
+    section a:hover, section a:visited:hover {
+      background: #37a5d2; }
+    @media screen and (min-width: 700px) {
+      section a, section a:visited {
+        display: inline-block; } }
+
+section#conclude h2 {
+  font-size: 2.1em; }
+  @media screen and (min-width: 850px) {
+    section#conclude h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 3em; } }
+section#conclude a {
+  min-width: 30%; }
+
+a#next {
+  bottom: 0;
+  color: #333333;
+  display: block;
+  font-size: 3em;
+  padding: 0.5em;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  z-index: 100; }
