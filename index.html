@@ -77,6 +77,11 @@
   </section>
 
   <footer id="footer-primary" class="footer-primary">
+    <div class="twitter-like">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="brickcaster">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>    
+    </div>
+    <div class="fb-like" data-href="http://christiantranshumanism.com" data-width="450" data-layout="box_count" data-show-faces="true" data-send="true"></
   </footer>
 
   <!-- ### Load jQuery via Google; fallback to local copy if offline. ### -->
@@ -89,6 +94,13 @@
   <![endif]-->
   <script src="./assets/js/vendor/jquery-scrollto.js"></script>
   <script src="./assets/js/application.js"></script>
-
+  <div id="fb-root"></div>  
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=275866199116127";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
