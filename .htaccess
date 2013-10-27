@@ -463,4 +463,5 @@ Options -Indexes
 </IfModule>
 
 Redirect 301 /group http://groups.google.com/group/christian-transhumanist-association
-Redirect 301 /signup http://eepurl.com/HGleH
+Redirect 301 /signup http://micahredding.com/ctaim
+# Redirect 301 /signup http://eepurl.com/HGleH
