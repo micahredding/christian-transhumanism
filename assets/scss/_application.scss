@@ -1,0 +1,180 @@
+/*
+ * PLEASE, PLEASE, PLEASE...
+ * Organize your CSS. Do not simply throw your CSS at the end
+ * of this file. Read the table of contents and _use_ it.
+ */
+
+/*
+ * TABLE OF CONTENTS
+ * ---------------------------------------------------------------------------
+ * 1. Globals  - Default HTML element styling.
+ * 2. Template - Styling for the structure of the site.
+ * ---------------------------------------------------------------------------
+ */
+
+/* Things to place in separate files...
+ * ---------------------------------------------------------------------------
+ * _variables.scss - Sass variables.
+ * _mixins.scss    - Sass mixins.
+ * _library.scss   - Styling for custom classes used throughout the site.
+ * _page_name.scss - Styling for page/state specific elements. Name the
+ *                   file appropriately.
+ * ---------------------------------------------------------------------------
+ */
+
+
+/* GLOBALS
+ * -----------------------------------------------------------------------------
+ * Styling for default HTML elements.
+ * -----------------------------------------------------------------------------*/
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+
+  @include media($tablet) {
+    font-size: $base-font-size-tablet;
+  }
+
+  background-attachment: fixed;
+  background-position: 50000;
+  background-size: cover;
+}
+
+a, a:visited {}
+a:hover, a:active {}
+
+blockquote {}
+small {}
+
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  color: $gray-dark;
+  @include media($desktop) {
+    font-size: 3.5em;
+  }
+}
+h2 {
+  font-size: 2em;
+  @include media($desktop) {
+    font-size: 3em;
+  }
+  font-weight: normal;
+  color: $gray-dark;
+}
+h1 + h2 {
+  font-size: 2em;
+  @include media($desktop) {
+    font-size: 1.8em;
+  }
+  color: $gray-light;  
+}
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: $gray-dark;
+}
+h2 + h3 {
+  font-size: 1em;
+  @include media($desktop) {
+    font-size: 2em;
+  }
+  font-weight: normal;
+  color: $gray-dark;
+}
+dl {
+  margin-bottom: $base-line-height;
+}
+
+dt,
+dd {
+  line-height: $base-line-height;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $base-line-height / 2;
+}
+
+.dl-horizontal {
+  dt {
+    clear: left;
+    float: left;
+    text-align: right;
+    width: 120px;
+    @include text-overflow();
+  }
+
+  dd {
+    margin-left: 130px;
+  }
+}
+
+/* TEMPLATE
+ * -----------------------------------------------------------------------------
+ * Styling for the structure of the site.
+ * -----------------------------------------------------------------------------*/
+#header-primary {}
+
+#nav-primary {}
+
+#content-primary {
+  @include outer-container;
+}
+section {
+  padding:3em 2em;
+  @include media($desktop) {
+    padding:3em 0;
+  }
+
+  a, a:visited {
+    background: #61b8db;
+    border-radius: 10px;
+    color:white;
+    display: block;
+    font-weight: bold;
+    padding:1em;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: darken(#61b8db, 10%);
+    }
+    @include media($tablet) {
+      display: inline-block;
+    }
+  }
+
+}
+section#conclude {
+  h2 {
+    font-size: 2.1em;
+    @include media($desktop) {
+      margin-top:0;
+      margin-bottom: 0;
+      font-size: 3em;
+    }
+  }
+  a {
+    min-width: 30%;
+  }
+}
+a#next {
+  bottom:0;
+  color:$gray-dark;
+  display: block;
+  font-size: 3em;
+  padding:0.5em;
+  position: fixed;
+  right:0;
+  text-align: center;
+  text-decoration: none;
+  width:100%;
+  z-index: 100;
+}
+
+#footer-primary {}
