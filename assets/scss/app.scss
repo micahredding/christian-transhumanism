@@ -1,0 +1,55 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'bitters/bitters';
+
+
+$brown: #4d433e;
+$dark-green: #323627;
+$light-green: #424627;
+
+p:first-child {
+	margin-top:0;
+}
+p:last-child {
+	margin-bottom:0;
+}
+
+html, body {
+	padding:0;
+	margin:0;
+}
+header, footer, #hero, #main {
+	padding:2em;
+	.inner {
+		@include outer-container;
+	}
+}
+header {
+	background: url('../images/evergreen.jpg') center center;
+	background-size: cover;
+	color: #ffffff;
+	font-size:4em;
+	line-height: 1em;
+	text-align: center;
+	padding: 1.5em;
+
+	/* Adjust for image */
+	padding-top:3em;
+	min-height:7em;
+}
+#hero {
+	background: $dark-green;
+	color: #ffffff;
+	text-align: center;
+	p {
+		font-size:2em;
+		line-height: 1em;
+	}
+}
+#main h1, #main h2, #main h3 {
+  margin-bottom: 0.7em;
+}
+footer {
+	background: darken($dark-green, 5%);
+	color: #ffffff;
+}
