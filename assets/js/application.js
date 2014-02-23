@@ -9,7 +9,7 @@
   nextSection = function() {
     var section, y, z, _i, _len, _ref;
     y = $(document).scrollTop() + (windowHeight / 2);
-    _ref = $('section');
+    _ref = $('#explore section');
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       section = _ref[_i];
       z = $(section).offset().top;
@@ -22,7 +22,7 @@
 
   windowSetup = function() {
     windowHeight = $(window).height();
-    return $('section').css('min-height', windowHeight);
+    return $('#explore section').css('min-height', windowHeight);
   };
 
   scrollNext = function(e) {
@@ -34,7 +34,7 @@
     }
   };
 
-  $('#content-primary').append('<a href="#intro" id="next" class="next">&#8744;</a>');
+  $('#explore #content-primary').append('<a href="#intro" id="next" class="next">&#8744;</a>');
 
   $('a#next').click(scrollNext);
 

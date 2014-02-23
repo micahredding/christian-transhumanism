@@ -152,6 +152,9 @@ h3 {
   font-size: 1em;
   font-weight: bold;
   color: #333333; }
+  @media screen and (min-width: 850px) {
+    h3 {
+      font-size: 2em; } }
 
 h2 + h3 {
   font-size: 1em;
@@ -189,23 +192,22 @@ dd {
  * -----------------------------------------------------------------------------
  * Styling for the structure of the site.
  * -----------------------------------------------------------------------------*/
-#content-primary {
+#explore #content-primary {
   *zoom: 1;
-  max-width: 43em;
+  max-width: 56.25em;
   margin-left: auto;
   margin-right: auto; }
-  #content-primary:before, #content-primary:after {
+  #explore #content-primary:before, #explore #content-primary:after {
     content: " ";
     display: table; }
-  #content-primary:after {
+  #explore #content-primary:after {
     clear: both; }
-
-section {
+#explore section {
   padding: 3em 2em; }
   @media screen and (min-width: 850px) {
-    section {
+    #explore section {
       padding: 3em 0; } }
-  section a, section a:visited {
+  #explore section a, #explore section a:visited {
     background: #61b8db;
     border-radius: 10px;
     color: white;
@@ -214,23 +216,21 @@ section {
     padding: 1em;
     text-align: center;
     text-decoration: none; }
-    section a:hover, section a:visited:hover {
+    #explore section a:hover, #explore section a:visited:hover {
       background: #37a5d2; }
     @media screen and (min-width: 700px) {
-      section a, section a:visited {
+      #explore section a, #explore section a:visited {
         display: inline-block; } }
-
-section#conclude h2 {
+#explore section#conclude h2 {
   font-size: 2.1em; }
   @media screen and (min-width: 850px) {
-    section#conclude h2 {
+    #explore section#conclude h2 {
       margin-top: 0;
       margin-bottom: 0;
       font-size: 3em; } }
-section#conclude a {
+#explore section#conclude a {
   min-width: 30%; }
-
-a#next {
+#explore a#next {
   bottom: 0;
   color: #333333;
   display: block;
@@ -242,3 +242,96 @@ a#next {
   text-decoration: none;
   width: 100%;
   z-index: 100; }
+
+/* SPECIFIC
+ * -----------------------------------------------------------------------------
+ * Section by section
+ * -----------------------------------------------------------------------------*/
+#front {
+  margin: 0;
+  padding: 0; }
+  @media screen and (min-width: 850px) {
+    #front #header-primary .inner {
+      *zoom: 1;
+      max-width: 56.25em;
+      margin-left: auto;
+      margin-right: auto; }
+      #front #header-primary .inner:before, #front #header-primary .inner:after {
+        content: " ";
+        display: table; }
+      #front #header-primary .inner:after {
+        clear: both; } }
+  @media screen and (min-width: 850px) {
+    #front #main {
+      *zoom: 1;
+      max-width: 56.25em;
+      margin-left: auto;
+      margin-right: auto; }
+      #front #main:before, #front #main:after {
+        content: " ";
+        display: table; }
+      #front #main:after {
+        clear: both; } }
+  @media screen and (min-width: 850px) {
+    #front #main #content-primary {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      #front #main #content-primary:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 850px) {
+    #front #main #footer-primary {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      #front #main #footer-primary:last-child {
+        margin-right: 0; } }
+  #front #header-primary {
+    background: url("../images/grass.jpg") center bottom no-repeat;
+    background-size: cover; }
+    #front #header-primary .inner {
+      padding: 6em 2em 0em; }
+      #front #header-primary .inner, #front #header-primary .inner h1, #front #header-primary .inner h2, #front #header-primary .inner a {
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+      #front #header-primary .inner h1 {
+        margin-bottom: 0; }
+      #front #header-primary .inner h2 {
+        margin-top: 0; }
+  #front #content-primary {
+    padding-top: 2em; }
+  #front #footer-primary {
+    padding-top: 2em; }
+    #front #footer-primary h2, #front #footer-primary h3 {
+      font-size: 1em; }
+      @media screen and (min-width: 850px) {
+        #front #footer-primary h2, #front #footer-primary h3 {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 2em; } }
+    #front #footer-primary a, #front #footer-primary a:visited {
+      background: #61b8db;
+      border-radius: 10px;
+      color: white;
+      display: block;
+      font-weight: bold;
+      padding: 0.5em;
+      text-align: center;
+      text-decoration: none; }
+      #front #footer-primary a:hover, #front #footer-primary a:visited:hover {
+        background: #37a5d2; }
+  #front a#next {
+    bottom: 0;
+    color: #333333;
+    display: block;
+    font-size: 3em;
+    padding: 0.5em;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100; }
