@@ -14,10 +14,10 @@
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
 
   <!-- ### Stylesheets ### -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/screen.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
 
   <!-- ### Place all scripts (excluding Modernizr) at bottom of the document. ### -->
-  <script src="./assets/js/vendor/modernizr-2.6.2.js"></script>
+  <script src="/assets/js/vendor/modernizr-2.6.2.js"></script>
 </head>
 
 <body class="page" id="front">
@@ -64,7 +64,7 @@
 
     </div>
 
-    <!--#include virtual="footer.html" -->
+    <!--#include virtual="../footer.html" -->
 
   </div>
 
@@ -74,10 +74,10 @@
 
   <!-- ### Scripts ### -->
   <!--[if IE 8]>
-    <script src="./assets/javascripts/ie8.js"></script>
+    <script src="/assets/javascripts/ie8.js"></script>
   <![endif]-->
-  <script src="./assets/js/vendor/jquery-scrollto.js"></script>
-  <script src="./assets/js/application.js"></script>
+  <script src="/assets/js/vendor/jquery-scrollto.js"></script>
+  <script src="/assets/js/application.js"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
