@@ -146,14 +146,12 @@ dd {
     @include media($desktop) {
       @include span-columns(8);
       @include pad;
-      padding-left: 0;
-      padding-top: 0;
-      padding-bottom: 0;
     }
   }
   #footer-primary {
     @include media($desktop) {
       @include span-columns(4);
+      @include pad;
     }
   }
 }
@@ -205,7 +203,6 @@ a, a:visited {
 }
 
 #footer-primary {
-  padding-top:2em;
   h2, h3 {
     font-size: 1em;
     @include media($desktop) {
