@@ -118,37 +118,11 @@ dd {
   }
 }
 
+
 /* TEMPLATE
  * -----------------------------------------------------------------------------
  * Styling for the structure of the site.
  * -----------------------------------------------------------------------------*/
-
-#nav-primary {}
-
-#header-primary {
-  .inner {
-    @include media($desktop) {
-      @include outer-container;
-    }
-  }
-}
-
-#main {
-  margin:0 2em 2em;
-  @include media($desktop) {
-    @include outer-container;
-  }
-  #content-primary {
-    @include media($desktop) {
-      @include span-columns(8);
-    }
-  }
-  #footer-primary {
-    @include media($desktop) {
-      @include span-columns(4);
-    }
-  }
-}
 
 
 /* SPECIFIC
@@ -156,78 +130,66 @@ dd {
  * Section by section
  * -----------------------------------------------------------------------------*/
 
-#front {
-  margin: 0;
-  padding: 0;
-}
+#explore {
 
-a, a:visited {
-  color: #61b8db;
-  // font-weight: bold;
-  text-decoration: none;
-  &:hover {
-    color: darken(#61b8db, 10%);
+  #header-primary {}
+
+  #nav-primary {}
+
+  #content-primary {
+    @include outer-container;
   }
-}
-
-#header-primary {
-  background: url('../images/grass.jpg') center bottom no-repeat;
-  background-size: cover;
-  .inner {
-    padding:6em 2em 0.5em;
-    &, h1, h2, a {
-      color: #ffffff;
-      text-align: center;
-      text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    }
-    h1 {
-      margin-bottom: 0;
-    }
-    h2 {
-      margin-top: 0;
-    }
-  }
-}
-
-#content-primary {
-  padding-top: 2em;
-
-  #blogs {
-
-  }
-}
-
-#footer-primary {
-  padding-top:2em;
-  h2, h3 {
-    font-size: 1em;
+  section {
+    padding:3em 2em;
     @include media($desktop) {
-      margin-top:0;
-      margin-bottom: 0;
-      font-size: 2em;
+      padding:3em 0;
     }
-  }
-  ul {
-    margin-bottom: 2em;
-    margin-top: 0;
-    padding-left: 0;
-    li {
-      list-style-type: none;
-      padding: 0.5em 0;
-    }
-  }
-}
 
-a#next {
-  bottom:0;
-  color:$gray-dark;
-  display: block;
-  font-size: 3em;
-  padding:0.5em;
-  position: fixed;
-  right:0;
-  text-align: center;
-  text-decoration: none;
-  width:100%;
-  z-index: 100;
+    a, a:visited {
+      background: #61b8db;
+      border-radius: 10px;
+      color:white;
+      display: block;
+      font-weight: bold;
+      padding:1em;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        background: darken(#61b8db, 10%);
+      }
+      @include media($tablet) {
+        display: inline-block;
+      }
+    }
+
+  }
+  section#conclude {
+    h2 {
+      font-size: 2.1em;
+      @include media($desktop) {
+        margin-top:0;
+        margin-bottom: 0;
+        font-size: 3em;
+      }
+    }
+    a {
+      min-width: 30%;
+    }
+  }
+  a#next {
+    bottom:0;
+    color:$gray-dark;
+    display: block;
+    font-size: 3em;
+    padding:0.5em;
+    position: fixed;
+    right:0;
+    text-align: center;
+    text-decoration: none;
+    width:100%;
+    z-index: 100;
+  }
+
+  #footer-primary {}
+
 }
