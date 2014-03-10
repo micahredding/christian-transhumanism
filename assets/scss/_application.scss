@@ -145,6 +145,7 @@ dd {
   #content-primary {
     @include media($desktop) {
       @include span-columns(8);
+      @include pad(0 default 0 0);
     }
   }
   #footer-primary {
@@ -195,9 +196,8 @@ a, a:visited {
 
 #content-primary {
   padding-top: 2em;
-
-  #blogs {
-
+  h3 {
+    margin: 0;
   }
 }
 
@@ -237,9 +237,6 @@ a#next {
 }
 
 #blogs {
-  h3 {
-    margin-bottom:0;
-  }
   a {
     display: block;
   }
