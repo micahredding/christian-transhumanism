@@ -247,6 +247,9 @@ dd {
   margin: 0;
   padding: 0; }
 
+section {
+  margin-bottom: 1em; }
+
 a, a:visited {
   color: #61b8db;
   text-decoration: none; }
@@ -269,13 +272,14 @@ a, a:visited {
 
 #content-primary {
   padding-top: 2em; }
-  #content-primary h3 {
+  #content-primary h2, #content-primary h3, #content-primary h4 {
+    line-height: 1em;
     margin: 0; }
 
-#footer-primary h2, #footer-primary h3 {
+#footer-primary h2, #footer-primary h3, #footer-primary h4 {
   font-size: 1em; }
   @media screen and (min-width: 850px) {
-    #footer-primary h2, #footer-primary h3 {
+    #footer-primary h2, #footer-primary h3, #footer-primary h4 {
       margin-top: 0;
       margin-bottom: 0;
       font-size: 2em; } }
