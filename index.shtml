@@ -21,12 +21,8 @@
 </head>
 
 <body class="page" id="front">
-  <header id="header-primary" class="header-primary">
-    <div class="inner">
-      <h1><strong>Christian Transhumanism</strong></h1>
-      <h2>“In Christ the new mankind has started.” - Paul Tillich</h2>
-    </div>
-  </header>
+
+  <!--#include virtual="header.html" -->
 
   <nav id="nav-primary" class="nav-primary">
   </nav>

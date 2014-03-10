@@ -132,6 +132,9 @@ h1 {
   @media screen and (min-width: 850px) {
     h1 {
       font-size: 3.5em; } }
+  h1 a {
+    color: #333333;
+    text-decoration: none; }
 
 h2 {
   font-size: 2em;
