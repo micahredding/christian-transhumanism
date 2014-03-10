@@ -248,7 +248,7 @@ dd {
   padding: 0; }
 
 section {
-  margin-bottom: 1em; }
+  margin-bottom: 3em; }
 
 a, a:visited {
   color: #61b8db;
@@ -273,7 +273,7 @@ a, a:visited {
 #content-primary {
   padding-top: 2em; }
   #content-primary h2, #content-primary h3, #content-primary h4 {
-    line-height: 1em;
+    line-height: 1.3em;
     margin: 0; }
 
 #footer-primary h2, #footer-primary h3, #footer-primary h4 {
