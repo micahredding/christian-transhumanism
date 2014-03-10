@@ -226,7 +226,10 @@ dd {
       float: left;
       margin-right: 2.35765%;
       width: 65.88078%;
-      padding: 0 default 0 0; }
+      padding: 2.35765%;
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 0; }
       #main #content-primary:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 850px) {

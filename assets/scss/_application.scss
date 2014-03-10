@@ -145,7 +145,10 @@ dd {
   #content-primary {
     @include media($desktop) {
       @include span-columns(8);
-      @include pad(0 default 0 0);
+      @include pad;
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
   #footer-primary {
