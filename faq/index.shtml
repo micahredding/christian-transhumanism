@@ -35,25 +35,31 @@
 
     <div id="content-primary" class="content-primary">
 
-      <section id="define-xn"><div class="inner">
-        <p><strong>Christian Transhumanism</strong> is simply the biblical view of humanity, as made in the image of God.</p>
-      </div></section>
+      <section id="faq"><div class="inner">
 
-      <section id="explore"><div class="inner">
-        <p>To live out that image, we <strong>create new things</strong> and bring new life into the world.</p>
-      </div></section>
+        <section id="faq-1">
+          <h3>Is the Christian Transhumanist Association a religion or church?</h3>
+          <p>No, the CTA is neither a religion nor a church. It is simply an association for Christians who identify with transhumanism or who recognize transhumanism as a legitimate extension of their faith. We exist to support Christians in their already existing religious commitments, and to enhance those commitments by working to bridge the divide between science and religion.</p>
+        </section>
 
-      <section id="explore2"><div class="inner">
-        <p>In the pattern of Abraham, Isaac, and Jacob, we continually venture out on faith to <strong>build new futures</strong> in the wilderness.</p>
-      </div></section>
+        <section id="faq-2">
+          <h3>What are the aims of the association?</h3>
+          <p>To pursue greater unity between science, religion, and technology. To support and enhance the religious commitments of our members. To encourage deeper conversation on the interaction between technology, culture, and our sense of self.</p>
+        </section>
 
-      <section id="define-human"><div class="inner">
-        <p>...Because improving the world through technology, science, discovery, and innovation is a deep part of what it means <strong>to be human</strong>.</p>
-      </div></section>
+        <section id="faq-3">
+          <h3>What is the relation between Christianity and Transhumanism?</h3>
+          <p>Increasingly, people are recognizing parallels and complements between Christian and Transhumanist views. On the one hand: Christianity affirms the identity of human beings as made in the image of God, holds out the hope and promise of transformation, and advocates following Jesus Christ forward through faith by grace towards creative and compassionate works.</p>
 
-      <section id="blogs"><div class="inner">
-        <h3>Blogs</h3>
-        <!--#include virtual="/rss2html/rss2html.php" -->
+          <p>On the other hand, <a href="http://en.wikipedia.org/wiki/Transhumanism">Transhumanism</a> is a mostly secular ideology that advocates the ethical use of technology to extend human ability, and to improve the human condition.</p>
+
+          <p>Despite their apparent differences, Christianity and Transhumanism hold to suprisingly similar views on the nature and potential of human beings, offer resonating visions of transformation, and embrace the shared necessity of working to heal the sick, feed the hungry, and bring life to the dead.</p>
+
+          <p>Resources available through this site provide more details on the relation between Christian and Transhumanist views.</p>
+        </section>
+
+
+
       </div></section>
 
     </div>
