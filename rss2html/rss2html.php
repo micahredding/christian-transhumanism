@@ -497,6 +497,8 @@ if (function_exists("FeedForAll_rss2html_limitLength") === FALSE) {
       return $initialValue;
     }
 
+    $initialValue = strip_tags($initialValue);
+
     // Cut the text at the exact point, ignoring if it is in a word.
     $result = substr($initialValue, 0, $limit);
 
