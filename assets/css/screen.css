@@ -305,6 +305,7 @@ a#next {
   z-index: 100; }
 
 #blogs .item {
+  font-size: 0.9em;
   margin: 1em 0; }
 #blogs a {
   display: block; }
