@@ -242,6 +242,9 @@ a#next {
 }
 
 #blogs {
+  .item {
+    margin:1em 0;
+  }
   a {
     display: block;
   }

@@ -304,5 +304,7 @@ a#next {
   width: 100%;
   z-index: 100; }
 
+#blogs .item {
+  margin: 1em 0; }
 #blogs a {
   display: block; }
