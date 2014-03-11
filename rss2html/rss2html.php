@@ -44,7 +44,7 @@ $TEMPLATEfilename = "short-template.html";
 $limitFeedTitleLength = 0;        // Not limited, in the URL as FeedTitleLength=
 $limitFeedDescriptionLength = 0;  // Not limited, in the URL as FeedDescriptionLength=
 $limitItemTitleLength = 0;        // Not limited, in the URL as ItemTitleLength=
-$limitItemDescriptionLength = 0;  // Not limited, in the URL as ItemDescriptionLength=
+$limitItemDescriptionLength = 100;  // Not limited, in the URL as ItemDescriptionLength=
 
 //
 // date() function documented http://www.php.net/manual/en/function.date.php
