@@ -1,0 +1,86 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7 no-js"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8 no-js"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9 no-js"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10 no-js"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>How did we arrive at Christian Transhumanism? // x+: Christian Transhumanist Association</title>
+  <meta name="description" content=""/>
+  <meta name="viewport" content="initial-scale=1"/>
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+  <!-- ### Stylesheets ### -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/screen.css"/>
+
+  <!-- ### Place all scripts (excluding Modernizr) at bottom of the document. ### -->
+  <script src="/assets/js/vendor/modernizr-2.6.2.js"></script>
+</head>
+
+<body class="page" id="front">
+
+  <!--#include virtual="../header.html" -->
+
+  <div id="main">
+
+    <div id="content-primary" class="content-primary">
+
+      <section id="faq"><div class="inner">
+
+      <h2>How did we arrive at Christian Transhumanism?</h2>
+
+      <p>What is the connection between Christianity and transhumanism? How did we arrive at a place of holding these two ideas together, and what is the relationship that we see between them?</p>
+
+      <h3>Christianity to Transhumanism</h3>
+
+      <p>For most of us, our transhumanism came through our Christianity. That is, Christianity led us to transhumanism in the same way that Christianity would lead you to caring about the poor. In reading and contemplating the scriptures, we came to see that humanity was intended to create and cultivate life, and engage in a never-ending process of spiritual and physical transformation.</p>
+
+      <p>The whole biblical story spells this out; from the creation and commissioning of human beings in Genesis 1, through Abraham’s calling to build a future no one had foreseen, to Jesus and Paul’s explicit intention to launch a “new humanity”, not defined by ethnicity, nationality, or gender, but by the living and ever-creative image of God.</p>
+
+      <p>Jesus embodies this new humanity, calls it into being, and draws us into it through his life, death, and resurrection. </p>
+
+      <p>And as we are transformed by the imitation of Christ, we are drawn to engage in the work of healing the sick, feeding the hungry, and bringing life to the dead.</p>
+
+      <p>This is Christianity, and this is transhumanism.</p>
+
+      <h3>Transhumanism to Christianity</h3>
+
+      <p>This is the path most of us have taken to get here. For some of us, however, the path has wound the other way around.</p>
+
+      <p>Some of us found Christianity through transhumanism. In embracing the transhumanist call to advance life along every dimension possible, we discovered the need for spirituality. In contemplating the possibilities of the far future, we came to see that the world is much larger than many anti-religionists think. In discovering the New Testament’s call to wage war against death, we found the ultimate expression of our transhumanist purpose.</p>
+
+      <p>And when seen from this light, the connection is obvious. Transhumanism arose in a world saturated in the Christian story. Its ambitions are ultimately Christian ambitions. Its aims are ultimately Christian aims. Its visions of transformation are drawn from the deepest visions of Christianity. It was anticipated in every way by Christians writers and theologians through the ages. </p>
+
+      <p>In recent years, transhumanism has shined a light on aspects of our human nature and purpose that have gone unnoticed for too long. It is our belief that Christianity calls us to embrace that nature and purpose, and to participate in the work of creating a better future and a better world.</p>
+
+      </div></section>
+
+    </div>
+
+    <!--#include virtual="../footer.html" -->
+
+  </div>
+
+  <!-- ### Load jQuery via Google; fallback to local copy if offline. ### -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+  <!-- ### Scripts ### -->
+  <!--[if IE 8]>
+    <script src="/assets/javascripts/ie8.js"></script>
+  <![endif]-->
+  <script src="/assets/js/vendor/jquery-scrollto.js"></script>
+  <script src="/assets/js/application.js"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=275866199116127";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>
