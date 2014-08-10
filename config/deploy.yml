@@ -6,7 +6,7 @@
 
 production:
   domain:
-    name: "bricksco@bricksites.com"
+    name: "bricks@bricksites.info"
     ssh_options: "-p 2222"
   deploy_to: "~/public_html/christiantranshumanism-wp"
   repository: "git@github.com:micahredding/christian-transhumanism.git"
