@@ -465,3 +465,4 @@ Options -Indexes
 Redirect 301 /group http://groups.google.com/group/christian-transhumanism
 # Redirect 301 /signup http://micahredding.com/ctaim
 Redirect 301 /signup http://eepurl.com/HGleH
+Redirect 301 /facebook https://www.facebook.com/groups/332924799454/
