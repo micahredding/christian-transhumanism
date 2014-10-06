@@ -1,0 +1,82 @@
+<h1 id="theme-mediaelement">theme-mediaelement</h1>
+<p>Base stylesheet for theme developers to work with the WordPress media player (mediaelement.js).</p>
+<p>This project was created because it&#39;s pretty tough to overwrite the style rules for the media player in WordPress.  The reasons for this are:</p>
+<ul>
+<li>WordPress loads a stylesheet in the footer.</li>
+<li>The stylesheet has extremely specific selectors that force you to write something more specific.</li>
+<li>The stylesheet has <code>!important</code> in several places.</li>
+</ul>
+<p>As a theme author, I didn&#39;t want to have to write something like the following:</p>
+<pre><code>.mejs-container .mejs-controls .mejs-button button { width: 100px !important; }
+</code></pre><p>What this project does is give you an easier way to handle this without a ton of crazy CSS and <code>!important</code> overrides.  It is a base stylesheet with fairly minimal styling (based off the original <code>medialement.css</code> skin).  You can use it to add custom styles by overwriting just the parts you need or you can completely fork the project and do what you want with it.</p>
+<h2 id="installation">Installation</h2>
+<p>To use this project, I highly recommend creating a sub-module in your theme&#39;s <code>/css</code> folder if you&#39;re using Git.  That way, it&#39;s much easier to keep up with updates.  Otherwise, do the following.</p>
+<ul>
+<li>Download a copy of ZIP file for this project.</li>
+<li>Extract the ZIP to <code>your-theme/css/mediaelement</code>.</li>
+<li>Load the <code>mediaelement.min.css</code> file (see below).</li>
+<li>Disable the WordPress Mediaelement.js styles (see below).</li>
+</ul>
+<h3 id="loading-the-stylesheet">Loading the stylesheet</h3>
+<p>There are a few ways to copy the stylesheet into your theme.</p>
+<h4 id="wp_enqueue_style-">wp_enqueue_style()</h4>
+<p>My preferred method is to enqueue the stylesheet via my theme&#39;s <code>functions.php</code> file.</p>
+<pre><code>add_action( &#39;wp_enqueue_scripts&#39;, &#39;my_enqueue_styles&#39; );
+
+function my_enqueue_styles() {
+    wp_enqueue_style( 
+        &#39;my-mediaelement&#39;, 
+        trailingslashit( get_template_directory_uri() ) . &#39;css/mediaelement/mediaelement.min.css&#39;,
+        null,
+        &#39;20130902&#39;
+    );
+}
+</code></pre><h4 id="-import">@import</h4>
+<p>You can also import it from your theme&#39;s <code>style.css</code> file.</p>
+<pre><code>@import url( &#39;css/mediaelement/mediaelement.min.css&#39; );
+</code></pre><h4 id="copy-paste">Copy/Paste</h4>
+<p>Another method is to copy all of <code>mediaelement.css</code> into your theme&#39;s <code>style.css</code> and make direct changes there.</p>
+<h3 id="disable-wordpress-mediaelement-js-styles">Disable WordPress&#39; Mediaelement.js styles</h3>
+<p>Add the following code to your theme&#39;s <code>functions.php</code> file to disable the WordPress stylesheets from loading.  This is an important step because it will allow our stylesheet to take over.</p>
+<pre><code>add_action( &#39;wp_enqueue_scripts&#39;, &#39;my_deregister_styles&#39; );
+
+function my_deregister_styles() {
+    wp_deregister_style( &#39;mediaelement&#39; );
+    wp_deregister_style( &#39;wp-mediaelement&#39; );
+}
+</code></pre><h2 id="background-images">Background Images</h2>
+<p>The stylesheet has the background images commented out by default.  This is so that themes aren&#39;t unnecessarily loading extra resources.  If you wish to use the default background images, use the following CSS code (correct the paths if necessary).</p>
+<pre><code>.mejs-overlay-button {
+    background: url( &#39;images/bigplay.png&#39; ) no-repeat;
+}
+
+.mejs-overlay-loading span {
+    background: transparent url( &#39;images/loading.gif&#39; ) 50% 50% no-repeat;
+}
+
+.mejs-button button {
+    background: transparent url( &#39;images/controls.png&#39; ) no-repeat;
+}
+</code></pre><h2 id="structure">Structure</h2>
+<p>Basic structure of the media player:</p>
+<pre><code>&lt;div class=&quot;mejs-container&quot;&gt;
+    &lt;div class=&quot;mejs-inner&quot;&gt;
+        &lt;div class=&quot;mejs-mediaelement&quot;&gt;
+            &lt;audio class=&quot;wp-audio-shortcode&quot;&gt;...&lt;/audio&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mejs-layers&quot;&gt;
+            &lt;div class=&quot;mejs-layer&quot;&gt;...&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mejs-controls&quot;&gt;
+            &lt;div class=&quot;mejs-button&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mejs-clear&quot;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><h2 id="development">Development</h2>
+<p>Follow the &quot;/dev&quot; branch for the latest updates.  Please make pull requests and patches against that branch rather than the master branch.</p>
+<p><a href="https://github.com/justintadlock/theme-mediaelement/tree/dev">https://github.com/justintadlock/theme-mediaelement/tree/dev</a></p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://mediaelementjs.com">http://mediaelementjs.com</a></li>
+</ul>
