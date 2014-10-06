@@ -26,3 +26,24 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+function ng_genesis_home_widgets() {
+      genesis_register_sidebar( array(          
+        'name' => __( 'Home Content', 'genesis' ),
+        'id' => 'content-1',
+        'description' => __( 'Home Content', 'genesis' ),
+        'before_widget' => '<div class="homecontent fixedtopleft">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>',
+    ) );
+}
+add_action( 'widgets_init', 'ng_genesis_home_widgets' );
+
+function ng_home_page_widgets() {
+	if ( is_front_page('') )
+	genesis_widget_area ('content-1', array(
+		'before' => '<div class="sidebar"><div class="widget widget_rss">',
+		'after' => '</div></div>',));
+}
+add_action( 'genesis_after_loop', 'ng_home_page_widgets' );
