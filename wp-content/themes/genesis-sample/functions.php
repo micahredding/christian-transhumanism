@@ -47,3 +47,12 @@ function ng_home_page_widgets() {
 		'after' => '</div></div>',));
 }
 add_action( 'genesis_after_loop', 'ng_home_page_widgets' );
+
+//* This cheat will help you to customize genesis footer credit area.
+//* For this cheat to work it is necessary that your child theme is HTML5 enabled.
+add_filter('genesis_footer_creds_text', 'wpvkp_footer_creds_filter');
+function wpvkp_footer_creds_filter( $editthecredit ) {
+$editthecredit = 'Copyright &copy; &middot; <a href="http://christiantranshumanism.org">Christian Transhumanism</a>';
+return $editthecredit ;
+}
+//*Please refer to the original post at my blog for full explaination of this snippet and other cheats
