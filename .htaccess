@@ -10,3 +10,7 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+Redirect 301 /group http://groups.google.com/group/christian-transhumanism
+Redirect 301 /signup http://eepurl.com/HGleH
+Redirect 301 /facebook https://www.facebook.com/groups/332924799454/
