@@ -863,13 +863,12 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
-	background: url(http://bricksites.info/micah/christiantranshumanism-wp/wp-content/uploads/2014/09/DKy1e4boQaev8RoBoWgD_Laudachsee_2014-01-11_-3-von-91-e1411006868852.jpg) center top no-repeat;
-	min-height: 160px;
+	background-color: #CADEE1;
+/*	min-height: 160px; */
 }
 
 .site-header .wrap {
-	padding: 40px 0;
+/*	padding: 40px 0; */
 }
 .site-header .site-title a, .site-header .site-description {
 	color: #ffffff;
@@ -888,9 +887,12 @@ img.alignright,
 }
 
 .site-title {
-	font-size: 32px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.2;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 1em;
 }
 
 .site-title a,
@@ -909,6 +911,7 @@ img.alignright,
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.5;
+	display: inline-block;
 }
 
 .site-description,
@@ -950,7 +953,7 @@ img.alignright,
 .genesis-nav-menu a {
 	color: #333;
 	display: block;
-	padding: 30px 24px;
+	padding: 14px 24px;
 }
 
 .genesis-nav-menu a:hover,
@@ -1496,10 +1499,10 @@ li.comment {
 	color: white;
 }
 #nav_menu-9 ul li {
-	border-bottom: none;
+/*	border-bottom: none;
 	display: inline-block;
 	margin-bottom: 0;
-	padding-bottom: 0;
+	padding-bottom: 0; */
 }
 #nav_menu-9 ul li a, #nav_menu-9 ul li a:link {
 	color: white;
@@ -1517,7 +1520,7 @@ li.comment {
 .title-area {
 }
 .site-title, .site-description {
-	text-shadow: 0 0 40px black;
+	text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 .site-title a:hover {
 	color: #ffffff;
@@ -1554,4 +1557,20 @@ li.comment {
 	color: white;
 	text-shadow: 0 0 25px black;
 
+}
+
+ul.books {
+	margin:1em 0;
+}
+ul.books li {
+	display: inline-block;
+	margin: 1em 0.7em;
+	max-width:30%;
+	vertical-align:top;
+}
+ul.books li img {
+	margin: 0.25em;
+}
+ul.books li a {
+	display: block;
 }
