@@ -864,8 +864,7 @@ img.alignright,
 
 .site-header {
 	background-color: #fff;
-	background: url(http://bricksites.info/micah/christiantranshumanism-wp/wp-content/uploads/2014/09/DKy1e4boQaev8RoBoWgD_Laudachsee_2014-01-11_-3-von-91-e1411006868852.jpg) center bottom no-repeat;
-	background-size: cover;
+	background: url(http://bricksites.info/micah/christiantranshumanism-wp/wp-content/uploads/2014/09/DKy1e4boQaev8RoBoWgD_Laudachsee_2014-01-11_-3-von-91-e1411006868852.jpg) center top no-repeat;
 	min-height: 160px;
 }
 
@@ -1514,4 +1513,45 @@ li.comment {
 }
 #yikes_mc_widget-3 h4 {
 	color: white;
+}
+.title-area {
+}
+.site-title, .site-description {
+	text-shadow: 0 0 40px black;
+}
+.site-title a:hover {
+	color: #ffffff;
+}
+.red-links {
+	padding-top:1em;
+}
+.red-links li {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.red-links a {
+	color:#ffffff; background:#e5554e; border-radius:5px; padding:10px; 
+	margin:0.5em;
+	display: inline-block;
+}
+.red-links a:hover {
+	background: #a5251e;
+}
+.soliloquy-container .soliloquy-caption {
+	background: none !important;
+}
+@media(min-width:800px) {
+.soliloquy-container .soliloquy-caption {
+	top: 31% !important;
+}
+}
+.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+	font-size: 3em;
+	text-shadow: 0 0 25px black;
+}
+.soliloquy-container .soliloquy-caption .soliloquy-caption-inside a {
+	color: white;
+	text-shadow: 0 0 25px black;
+
 }

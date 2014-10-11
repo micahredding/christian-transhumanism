@@ -29,23 +29,54 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 
 function ng_genesis_home_widgets() {
       genesis_register_sidebar( array(          
-        'name' => __( 'Home Content', 'genesis' ),
-        'id' => 'content-1',
-        'description' => __( 'Home Content', 'genesis' ),
+        'name' => __( 'Home Content Top', 'genesis' ),
+        'id' => 'content-0',
+        'description' => __( 'Home Content Top', 'genesis' ),
         'before_widget' => '<div class="homecontent fixedtopleft">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>',
     ) );
+      genesis_register_sidebar( array(          
+        'name' => __( 'Home Content Bottom', 'genesis' ),
+        'id' => 'content-1',
+        'description' => __( 'Home Content Bottom', 'genesis' ),
+        'before_widget' => '<div class="homecontent fixedtopleft">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>',
+    ) );
+    genesis_register_sidebar( array(          
+        'name' => __( 'Extra Content', 'genesis' ),
+        'id' => 'content-2',
+        'description' => __( 'Extra Content', 'genesis' ),
+        'before_widget' => '<div class="homecontent fixedtopleft">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widgettitle">',
+        'after_title' => '</h3>',
+    ) );
+
 }
 add_action( 'widgets_init', 'ng_genesis_home_widgets' );
 
+function ng_top_widgets() {
+	if(is_front_page())
+	genesis_widget_area ('content-0', array(
+		'before' => '<div class="sidebar"><div class="" style="margin-bottom:2em;">',
+		'after' => '</div></div>',));
+}
 function ng_home_page_widgets() {
-	if ( is_front_page('') )
+	if(is_front_page())
 	genesis_widget_area ('content-1', array(
 		'before' => '<div class="sidebar"><div class="widget widget_rss">',
 		'after' => '</div></div>',));
+
+	if(is_page(125))
+	genesis_widget_area ('content-2', array(
+		'before' => '<div class="sidebar"><div class="widget widget_rss">',
+		'after' => '</div></div>',));
 }
+add_action( 'genesis_before_loop', 'ng_top_widgets' );
 add_action( 'genesis_after_loop', 'ng_home_page_widgets' );
 
 //* This cheat will help you to customize genesis footer credit area.
